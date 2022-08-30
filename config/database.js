@@ -12,9 +12,4 @@ const connectDB = async () => {
     }
 };
 
-//Connect to Mongo
-mongoose.connect(
-    process.env.DB_CONNECTION, 
-    { useNewUrlParser: true }, 
-    () => {console.log("Connected to db!");}
-)
+module.exports = connectDB;

@@ -13,4 +13,4 @@ date: {
     default: Date.now
 }
 })
-module.exports = mongoose.model('TodoTask',todoTaskSchema,'tasks');
+module.exports = mongoose.model('TodoTask',todoTaskSchema,'tasks'); // ('ModelName', 'schemaName', 'collectionName')
